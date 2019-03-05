@@ -1,0 +1,48 @@
+@import '~bootstrap/scss/bootstrap';
+
+.page-header{
+  box-shadow: 0 2px 4px 0 rgba(43, 53, 224, 0.12);
+  position: fixed;
+  width: 100%;
+  background: #000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 3;
+
+  &__logo-container {
+  }
+
+  &__links {
+    text-align: right;
+  }
+
+  &__link {
+    margin-left: 30px;
+    cursor: pointer;
+  }
+  
+  &__logo {
+    width: 150px;
+    float: left;
+    position: relative;
+
+    &:after {
+      content: "Trailers";
+      position: absolute;
+      color: #fff;
+      bottom: -6px;
+      right: 7px;
+      font-size: 12px;
+    }
+  }
+
+  &__cta {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+
+  &__head-img {
+    width: 150px;
+    height: 42px;
+  }
+}

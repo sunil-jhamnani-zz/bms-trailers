@@ -1,0 +1,48 @@
+.dropdown {
+  float: left;
+  &__head {
+    color: #49ba8e;
+    float: right;
+    position: relative;
+    padding: 8px 15px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 14px;
+    border: 1px solid #49ba8e;
+    min-width: 150px;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__caret {
+    position: absolute;
+    right: 10px;
+  }
+
+  &__caret-img {
+    width: 10px;
+    height: 10px;
+  }
+
+  &__content {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    padding: 0 10px;
+  }
+
+  &__selections {
+    float: left;
+  }
+
+  &__dd-list {
+    list-style: none;
+    padding: 10px;
+    opacity: 0.9;
+    background: #666666;
+    color: #fff;
+  }
+}

@@ -1,0 +1,59 @@
+.video-element {
+  color: #fff;
+  padding: 15px;
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url("https://in.bmscdn.com/events/moviecard/ET00046165.jpg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  &__likes-votes {
+    margin-top: 20px;
+    .content {
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  &__calender-icon {
+    margin-left: 40px;
+  }
+
+  &__votes, &__release-year {
+    font-size: 12px;
+  }
+
+  &__like-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+  }
+
+  &__movie-details {
+    padding: 10px;
+    background: #303030;
+    opacity: 0.8;
+  }
+
+  &__video, &__movie-details {
+    z-index: 2;
+    height: 500px;
+  }
+
+  &__video {
+    iframe {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

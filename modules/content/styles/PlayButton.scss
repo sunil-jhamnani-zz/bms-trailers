@@ -1,0 +1,32 @@
+.play-button {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border: 2px solid #ddd;
+  background: rgba(0,0,0,.4);
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  transition: width 100ms ease-in-out 0s, height 100ms ease-in-out 0s;
+
+  &:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 14px;
+    border-color: transparent transparent transparent #ddd;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  &:hover {
+    width: 45px;
+    height: 45px;
+  }
+}

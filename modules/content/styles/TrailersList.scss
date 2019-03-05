@@ -1,0 +1,46 @@
+.all-trailers {
+  position: relative;
+  top: 82px;
+  background: #303030;
+
+  .row {
+    display: grid;
+  }
+
+  @media screen and (min-width: 540px) {
+    .row {
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+
+  @media screen and (min-width: 720px) {
+    .row {
+      grid-template-columns: repeat(3,1fr);
+    }
+  }
+
+  @media screen and (min-width: 960px) {
+    .row {
+      grid-template-columns: repeat(3,1fr);
+    }
+  }
+
+  @media screen and (min-width: 1140px) {
+    .row {
+      grid-template-columns: repeat(3,1fr);
+    }
+  }
+
+  @media screen and (max-width: 1140px) {
+    &.container-fluid {
+      max-width: 1140px;
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .row {
+      grid-template-columns: repeat(6,1fr);
+    }
+  }
+}
