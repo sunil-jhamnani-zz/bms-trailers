@@ -1,4 +1,4 @@
-# Example next js app
+# BMS trailers app
 
 ## How to use
 
@@ -6,6 +6,8 @@ Execute the following commond to run the application locally
 
 ```bash
 yarn install 
-# or
+
+yarn build 
+
 yarn run dev
 ```
